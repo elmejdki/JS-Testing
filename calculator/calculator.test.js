@@ -8,3 +8,12 @@ test('subtracts two numbers', () => {
   expect(calculator.subtract(10, 7)).toBe(3);
   expect(calculator.subtract(10, 3)).toEqual(expect.any(Number));
 })
+
+test("divide's two numbers", () => {
+  expect(calculator.divide(10, 5)).toBe(2);
+})
+
+test('multiplies two numbers', () => {
+  expect(calculator.multiply(5, 5)).toBe(25);
+})
+
