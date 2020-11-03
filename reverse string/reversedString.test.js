@@ -1,4 +1,4 @@
-import reverse from './reversedString'
+import reverse from './reversedString';
 
 test('string is reversed', () => {
   expect(reverse('love')).toBe('evol');

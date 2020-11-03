@@ -2,28 +2,22 @@ export default function (arr) {
   const average = () => {
     let sum = 0;
     arr.forEach(element => {
-      sum = sum + element;
+      sum += element;
     });
 
-    return sum / arr.length
-  }
+    return sum / arr.length;
+  };
 
-  const min = () => {
-    return Math.min(...arr)
-  }
+  const min = () => Math.min(...arr);
 
-  const max = () => {
-    return Math.max(...arr)
-  }
+  const max = () => Math.max(...arr);
 
-  const length = () => {
-    return arr.length
-  }
+  const length = () => arr.length;
 
   return {
     average: average(),
     min: min(),
     max: max(),
-    length: length()
+    length: length(),
   };
 }

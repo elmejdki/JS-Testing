@@ -1,32 +1,22 @@
-export default (function() {
-  const add = (...args) => {
-    return args.reduce(function (accumulator, current) {
-      return accumulator + current;
-    })
-  }
+const add = (...args) => (
+  args.reduce((accumulator, current) => accumulator + current)
+);
 
-  const subtract = (...args) => {
-    return args.reduce(function (accumulator, current) {
-      return accumulator - current;
-    })
-  }
+const subtract = (...args) => (
+  args.reduce((accumulator, current) => accumulator - current)
+);
 
-  const multiply = (...args) => {
-    return args.reduce(function (accumulator, current) {
-      return accumulator * current;
-    })
-  }
+const multiply = (...args) => (
+  args.reduce((accumulator, current) => accumulator * current)
+);
 
-  const divide = (...args) => {
-    return args.reduce(function (accumulator, current) {
-      return accumulator / current;
-    })
-  }
+const divide = (...args) => (
+  args.reduce((accumulator, current) => accumulator / current)
+);
 
-  return {
-    add,
-    subtract,
-    multiply,
-    divide
-  }
-})();
+export {
+  add,
+  subtract,
+  multiply,
+  divide,
+};

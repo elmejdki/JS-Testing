@@ -1,5 +1,3 @@
 export default function (str) {
-  var reversedStr = str.split("").reverse().join("");
-
-  return reversedStr
+  return str.split('').reverse().join('');
 }
