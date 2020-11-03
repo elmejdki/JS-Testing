@@ -19,3 +19,7 @@ test('cipher of edu with 102 shift is equal to cipher of edu with 102 shift', ()
 test('cipher of zzzZZZ with one shift is equal to aaaAAA', () => {
   expect(cipher('zzzZZZ', 1)).toBe('aaaAAA');
 });
+
+test('cipher of aAbx]{!,. with one shift is equal to cCdz]{!,.', () => {
+  expect(cipher('aAbx]{!,.', 2)).toBe('cCdz]{!,.');
+});
